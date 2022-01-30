@@ -9,7 +9,7 @@ type messageDataType = {
     time: string
 }
 
-function Message(props:messageDataType) {
+function Message(props: messageDataType) {
     return (
         <div className={m.message}>
             <img src={props.avatar} alt={'avatar'} className={m.avatar}/>
