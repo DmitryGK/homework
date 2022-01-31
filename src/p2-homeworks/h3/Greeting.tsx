@@ -1,12 +1,13 @@
 import React from 'react'
 import s from './Greeting.module.css'
+import {UserType} from "./HW3";
 
 type GreetingPropsType = {
     name: string // need to fix any
     setNameCallback: any // need to fix any
     addUser: any // need to fix any
     error: any // need to fix any
-    totalUsers: any // need to fix any
+    totalUsers: number // need to fix any
 }
 
 // презентационная компонента (для верстальщика)
