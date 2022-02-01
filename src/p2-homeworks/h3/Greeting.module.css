@@ -4,5 +4,12 @@
 }
 
 .error {
-    border: 1px solid red;
+    color: red
+}
+.input {
+    border: 1px solid black
+}
+
+.errorInput {
+    border: 1px solid red
 }

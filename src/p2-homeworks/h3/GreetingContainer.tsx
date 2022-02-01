@@ -1,7 +1,6 @@
-import React, {ChangeEvent, MouseEventHandler, SetStateAction, useState} from 'react'
+import React, {ChangeEvent, KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
-import {v1} from "uuid";
 
 type GreetingContainerPropsType = {
     users: UserType[]
@@ -15,22 +14,36 @@ type GreetingContainerPropsType = {
 // уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
     const [name, setName] = useState<string>('') // need to fix any
-    const [error, setError] = useState<string | null>(null) // need to fix any
+    const [error, setError] = useState<string | null>('') // need to fix any
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        const trimmedName = e.currentTarget.value.trim()
+        const newName = e.currentTarget.value.trim()
 
-        if (trimmedName){
-            setName(trimmedName)
+        if (newName) {
+            setName(newName)
             setError(null)
         } else {
             setName('')
             setError('name is required')
         }
     }
+
     const addUser = () => {
-        addUserCallback(name)
-        alert (`Hello ${name} !`)
+        if (name.trim() !== '') {
+            addUserCallback(name)
+            alert(`Hello ${name} !`)
+            setName('')
+        } else {
+            setError('name is required')
+
+        }
+    }
+
+    const onKeyPress = (e:KeyboardEvent<HTMLInputElement>) => {
+        if (e.key  === 'Enter' && name) {
+            addUser()
+            setName('')
+        }
     }
 
     const totalUsers = users.length
@@ -44,6 +57,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
+            onKeyPress={onKeyPress}
         />
     )
 }
