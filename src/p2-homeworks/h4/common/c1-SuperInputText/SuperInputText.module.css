@@ -1,12 +1,27 @@
 .superInput {
-
+    margin: 20px;
+    border: solid dimgrey 3px;
+    border-radius: 20px;
+    outline: none;
+    width: 200px;
+    height: 30px;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    width: 200px;
+    height: 30px;
+    margin: 20px;
+    border-inline: none;
+    outline: none;
+    border-radius: 20px;
+    border: 3px solid #fa3653;
+    background: rgba(255, 0, 0, 0.47);
 }
 
 .error {
     color: red;
+}
+
+.inpBorder{
+
 }
