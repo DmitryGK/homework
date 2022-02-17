@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
+import s from './Affairs.module.css'
 
 // types
 
@@ -41,7 +42,7 @@ function HW2() {
     return (
         <div>
             <hr/>
-            homeworks 2
+            <div className={s.header}>homeworks 2</div>
 
             {/*should work (должно работать)*/}
             <Affairs

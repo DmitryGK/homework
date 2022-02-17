@@ -1,5 +1,6 @@
 import React from 'react'
 import Message from "./Message";
+import s from  './../h2/Affairs.module.css'
 
 const messageData = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
@@ -13,7 +14,7 @@ function HW1() {
     return (
         <div>
             <hr/>
-            homeworks 1
+            <div className={s.header}>homeworks 1</div>
 
             <Message
                 avatar={messageData.avatar}

@@ -4,20 +4,43 @@
 
 .title {
     color:azure;
+    font-weight: bold;
 }
 
 .priority {
-    color: rgba(24, 24, 24, 0.31);
+    color: rgb(250, 54, 83);
 
 }
 
 .affair {
-    width: 250px;
+    width: 400px;
     line-height: 50px;
     padding-left: 10px;
-
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 .buttonDelete {
+    border: 2px solid #f93a13;
+    color: white;
+    background-color: #696868;
+    border-radius: 5px;
+    justify-content: right;
+}
 
-
+.header {
+    margin-left: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, serif;
+}
+.button {
+    border: 2px solid #f93a13;
+    color:white;
+    border-radius: 5px;
+    background-color: #696868;
+    margin: 15px
 }
