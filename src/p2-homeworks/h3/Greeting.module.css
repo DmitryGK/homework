@@ -11,7 +11,7 @@
 
 }
 .input {
-    border: 2px solid rgba(249, 58, 19, 0.49);
+    border: 2px solid rgba(179, 133, 232, 0.52);
     margin-left: 15px;
     border-radius: 5px;
 
@@ -26,12 +26,12 @@
 .counter {
     font-weight: bold;
     margin-left: 10px;
-    color: white;
+    color: #bdbdbd;
 }
 .button {
     margin-left: 5px;
-    border: 2px solid rgba(249, 58, 19, 0.44);
-    background-color: #696868;
-    color:white;
+    border: 2px solid rgba(179, 133, 232, 0.52);
+    background-color:rgba(3, 3, 3, 0.55);
+    color:rgba(255, 255, 255, 0.35);
     border-radius: 5px;
 }

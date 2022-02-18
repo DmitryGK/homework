@@ -4,39 +4,29 @@ import {PATH} from "./Routes";
 import s from './pages/Header.module.css'
 
 
+type isActiveType = {
+    isActive: boolean
+}
+
+const setActive = ({isActive}: isActiveType) => isActive ? s.active : ''
+
 function Header() {
 
-    const [showLinks, setShowLinks] = useState(false)
-    console.log(showLinks)
-
-    const onClickChanger = () => {
-        setShowLinks(true)
-    }
-    const onClickCloser = () => {
-        setShowLinks(false)
-    }
-
-
-    return showLinks
-        ? <div className={s.header}>
-            <div className={s.link}>
-                <NavLink to={PATH.PRE_JUNIOR}>PreJunior</NavLink>
+    return (
+        <div className={s.header}>
+            <div className={s.item}>
+                <NavLink to={PATH.PRE_JUNIOR} className={setActive}>PreJunior</NavLink>
             </div>
-            <div className={s.link}>
-                <NavLink to={PATH.JUNIOR}>Junior</NavLink>
+            <div className={s.item}>
+                <NavLink to={PATH.JUNIOR} className={setActive}>Junior</NavLink>
             </div>
-            <div className={s.link}>
-                <NavLink to={PATH.JUNIOR_PLUS}>Junior+</NavLink>
+            <div className={s.item}>
+                <NavLink to={PATH.JUNIOR_PLUS} className={setActive}>Junior+</NavLink>
             </div>
-            <div>
-                <button onClick={onClickCloser} className={s.setButton}/>
-            </div>
-        </div>
-        : <div>
-            <button onClick={onClickChanger} className={s.closeButton}/>
-
+            <button className={s.button}/>
         </div>
 
+    )
 
 }
 

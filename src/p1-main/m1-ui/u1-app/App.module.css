@@ -1,3 +1,10 @@
 .App {
-    background: #212121;
+    background: #333333;
+}
+.header {
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, serif;
 }

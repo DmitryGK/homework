@@ -1,12 +1,12 @@
 
-
 .title {
-    color: azure;
+    color: #bdbdbd;
     font-weight: bold;
 }
 
 .priority {
-    color: rgb(250, 54, 83);
+    color: #523786;
+    text-shadow: 1px 1px 2px rgba(14, 14, 14, 0.95);
 
 }
 
@@ -21,16 +21,16 @@
 }
 
 .buttonDelete {
-    border: 2px solid #858585;
-    color: white;
-    background-color: #696868;
-    border-radius: 5px;
+    border: 1px solid rgba(179, 133, 232, 0.52);
+    color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(3, 3, 3, 0.55);
+    border-radius: 8px;
     justify-content: right;
 }
 
 .header {
     margin-left: 20px;
-    color: white;
+    color: rgb(3, 3, 3);
     font-size: 25px;
     font-weight: bold;
     font-family: Arial, serif;
@@ -39,19 +39,19 @@
 .button {
     font-weight: bold;
     width: 60px;
-    border: 2px solid #696868;
-    color: white;
-    border-radius: 5px;
-    background: linear-gradient(to bottom right, #696868, #444444);
+    border: 2px solid rgba(179, 133, 232, 0.52);
+    color: rgba(255, 255, 255, 0.35);
+    border-radius: 8px;
+    background: rgba(3, 3, 3, 0.55);
     margin: 15px
 }
 
 .selected__button {
     width: 60px;
-    border: 2px solid #696868;
+    border: 2px solid rgba(179, 133, 232, 0.52);
     font-weight: bold;
     color: #ffffff;
     border-radius: 5px;
-    background: linear-gradient(to bottom right, #f93a13, #755454);
+    background: #b691ff;
     margin: 15px
 }

@@ -2,21 +2,32 @@
     display: flex;
     margin: 30px;
     align-items: center;
-
+    width: 400px;
+    transition-duration: 600ms;
+    transform: translate(-300px);
 }
 
-.link a{
+.header:hover {
+    transition-duration: 600ms;
+    transform: translate(0);
+}
+
+.item a {
     margin: 15px;
     color: white;
     text-decoration: none;
 }
-.setButton {
-    height: 30px;
-    width: 30px;
 
+.item a.active {
+    color: #b385e8;
 }
-.closeButton {
+
+
+.button {
     height: 30px;
     width: 30px;
     margin: 26px;
+    background-color: #b385e8;
+    border: none;
+    border-radius: 5px;
 }
