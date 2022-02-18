@@ -16,7 +16,6 @@ function AllRoutes() {
     return (
         <div>
             <Routes>
-                <Route path='/'  element={PATH.PRE_JUNIOR}  />
                 <Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
                 <Route path={PATH.JUNIOR} element={<Junior/>}/>
                 <Route path={PATH.JUNIOR_PLUS} element={<JuniorPlus/>}/>
