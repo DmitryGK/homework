@@ -3,8 +3,8 @@
     margin: 30px;
     align-items: center;
     width: 400px;
-    transition-duration: 600ms;
-    transform: translate(-300px);
+    transition-duration: 400ms;
+    transform: translate(-280px);
 }
 
 .header:hover {
@@ -25,9 +25,31 @@
 
 .button {
     height: 30px;
-    width: 30px;
-    margin: 26px;
-    background-color: #b385e8;
+    width: 50px;
+    margin: 40px;
+
     border: none;
     border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.button:before,
+.button:after,
+.button div {
+    background: #b385e8;
+    content: "";
+    display: block;
+    height: 6px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+}
+.button:hover:before {
+    transform: translateY(12px) rotate(135deg);
+}
+.button:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+.button:hover div {
+    transform: scale(0);
 }

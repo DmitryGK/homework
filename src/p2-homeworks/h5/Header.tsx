@@ -14,6 +14,7 @@ function Header() {
 
     return (
         <div className={s.header}>
+
             <div className={s.item}>
                 <NavLink to={PATH.PRE_JUNIOR} className={setActive}>PreJunior</NavLink>
             </div>
@@ -23,8 +24,12 @@ function Header() {
             <div className={s.item}>
                 <NavLink to={PATH.JUNIOR_PLUS} className={setActive}>Junior+</NavLink>
             </div>
-            <button className={s.button}/>
+            <div className={s.button}>
+                <div/>
+            </div>
+
         </div>
+
 
     )
 
