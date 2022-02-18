@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    margin: 30px;
+    align-items: center;
+
+}
+
+.link a{
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+}
+.setButton {
+    height: 30px;
+    width: 30px;
+
+}
+.closeButton {
+    height: 30px;
+    width: 30px;
+    margin: 26px;
+}
