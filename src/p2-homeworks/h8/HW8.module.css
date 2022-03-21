@@ -1,0 +1,17 @@
+.buttons {
+    margin-top: 20px;
+    display: flex;
+}
+
+.users {
+    display: flex;
+}
+
+.name {
+    width: 300px;
+    font-weight: lighter;
+}
+
+.age {
+    font-weight: lighter;
+}
