@@ -6,16 +6,22 @@ function HW11() {
     const [value1, setValue1] = useState(0)
     const [value2, setValue2] = useState(100)
 
+    const onChange = () => {}
+    const onChangeValue = () => {}
+
     return (
+
+       
         <div>
             <hr/>
             homeworks 11
 
-            {/*should work (должно работать)*/}
+            
             <div>
                 <span>{value1}</span>
                 <SuperRange
-                    // сделать так чтоб value1 изменялось
+                    onChange={onChange}
+                    onChangeValue={onChangeValue}
                 />
             </div>
 
