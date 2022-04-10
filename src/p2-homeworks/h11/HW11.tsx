@@ -10,9 +10,13 @@ function HW11() {
 
 
 
-    const onChangeSlider = (e: ChangeEvent<HTMLInputElement>) => {
+    const onChangeSliderValue1 = (e: ChangeEvent<HTMLInputElement>) => {
         setValue1(parseInt(e.currentTarget.value, 10))
     }
+    const onChangeSliderValue2 = (e: ChangeEvent<HTMLInputElement>) => {
+        setValue2(parseInt(e.currentTarget.value, 10))
+    }
+
 
     return (
 
@@ -26,17 +30,23 @@ function HW11() {
                     max={100}
                     step={1}
                     value={value1}
-                    onChangeValue={onChangeSlider}
+                    onChangeValue={onChangeSliderValue1}
                 />
                 
             </div>
 
             <div>
-                <span>{value1}</span>
+                
                 <SuperDoubleRange
-
+                    min={0}
+                    max={100}
+                    step={1}
+                    value1={value1}
+                    value2={value2}
+                    onChangeValue2={onChangeSliderValue2}
+                    onChangeValue={onChangeSliderValue1}
                 />
-                <span>{value2}</span>
+                
             </div>
 
             <hr />
