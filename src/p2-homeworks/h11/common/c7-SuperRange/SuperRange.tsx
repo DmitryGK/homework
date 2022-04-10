@@ -19,6 +19,7 @@ const SuperRange = (props: SuperRangePropsType) => {
       max,
       value,
       onChangeValue
+
   } = props
 
   const handleChange = (value: number) => (e:ChangeEvent<HTMLInputElement>) => {
@@ -37,6 +38,10 @@ const SuperRange = (props: SuperRangePropsType) => {
                     value={value}
                     onChange={handleChange(max)}
                 />
+                <span className={s.rangeSliderValue}>{value}</span>
+                <div className={s.rangeMinMaxValues}>
+                    <span>{value}</span><span>{max}</span>
+                </div>
           </div>
       </>
   )   

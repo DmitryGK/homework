@@ -20,7 +20,7 @@ function HW11() {
             <hr />
             homeworks 11
             <div>
-                <span className={s.rangeSliderValue}>{value1}</span>
+                
                 <SuperRange
                     min={0}
                     max={100}
@@ -28,6 +28,7 @@ function HW11() {
                     value={value1}
                     onChangeValue={onChangeSlider}
                 />
+                
             </div>
 
             <div>
